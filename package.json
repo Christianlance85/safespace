@@ -15,7 +15,7 @@
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
-    "start": "nodemon"
+    "start": "nodemon nodemon.json"
   },
   "engines": {
     "node": "8.11.1",
