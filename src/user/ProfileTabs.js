@@ -34,9 +34,13 @@ class ProfileTabs extends Component {
             fullWidth
           >
             <Tab label="Posts" />
+            <Tab label="Following" />
+            <Tab label="Followers" />
           </Tabs>
         </AppBar>
        {this.state.tab === 0 && <TabContainer><PostList removeUpdate={this.props.removePostUpdate} posts={this.props.posts}/></TabContainer>}
+       {this.state.tab === 1 && <TabContainer><FollowGrid people={this.props.user.following}/></TabContainer>}
+       {this.state.tab === 2 && <TabContainer><FollowGrid people={this.props.user.followers}/></TabContainer>}
     </div>)
   }
 }
