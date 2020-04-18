@@ -91,7 +91,8 @@ class Profile extends Component {
   loadPosts = (user) => {
     const jwt = auth.isAuthenticated()
     listByUser({
-      userId: user
+      userId: user,
+      
     }, {
       t: jwt.token
     }).then((data) => {
