@@ -21,7 +21,7 @@ class ProfileTabs extends Component {
   handleTabChange = (event, value) => {
     this.setState({ tab: value })
   }
-
+//
   render() {
     return (
     <div>

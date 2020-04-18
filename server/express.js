@@ -25,7 +25,6 @@ import {teal, orange} from 'material-ui/colors'
 const CURRENT_WORKING_DIR = process.cwd()
 const app = express()
 
-
 // parse body params and attache them to req.body
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -93,3 +92,4 @@ app.use((err, req, res, next) => {
 })
 
 export default app
+;
