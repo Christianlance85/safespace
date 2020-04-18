@@ -46,7 +46,7 @@ const styles = theme => ({
   button: {
    margin: theme.spacing.unit,
   },
-  dark,
+ 
 })
 
 class Post extends Component {
