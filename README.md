@@ -1,7 +1,7 @@
 # safespace
 A full-stack MERN Social Media application that allows users to make posts that last for only 24 hours, leaving their posts "safe" from future scrutiny.
 
-SafeSpace is a simple social media application with users, posts, likes and comments - developed using React, Node, Express and MongoDB. 
+SafeSpace is a simple social media application with posts only lasting 24 hours. Contains users, posts, likes and comments - developed using React, Node, Express and MongoDB. 
 
 
 
@@ -16,8 +16,11 @@ SafeSpace is a simple social media application with users, posts, likes and comm
 3. Open command line in the cloned folder,
    - To install dependencies, run ```  npm install  ```
    - To run the application for development, run ```  npm run development  ```
+   - To run the application in production, use ``` npm start ```
 4. Open [localhost:3000](http://localhost:3000/) in the browser
----- 
-----
+
+
+
+
 
 
