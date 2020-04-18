@@ -99,8 +99,7 @@ class Profile extends Component {
       if (data.error) {
         console.log(data.error)
       } else {
-        this.setState({posts: data}).then(
-        db.getCollection("Post").find({"created":{$gt:new Date(Date.now() - 24*60*60)}}))
+        this.setState({posts: data(db.getCollection("Post").find({"created":{$gt:new Date(Date.now() - 24*60*60)}}))})
       }
     })
   }
