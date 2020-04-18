@@ -25,11 +25,7 @@ const Menu = withRouter(({history}) => (
           <HomeIcon/>
         </IconButton>
       </Link>
-      <Link to="/">
-        <IconButton aria-label="Search" style={isActive(history, "/")}>
-          <SearchIcon/>
-        </IconButton>
-      </Link>
+
       {
         !auth.isAuthenticated() && (<span>
           <Link to="/signup">
