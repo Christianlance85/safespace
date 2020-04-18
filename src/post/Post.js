@@ -14,16 +14,18 @@ import {withStyles} from 'material-ui/styles'
 import {Link} from 'react-router-dom'
 import {remove, like, unlike} from './api-post.js'
 import Comments from './Comments'
+import { dark } from 'material-ui/styles/createPalette'
 
 const styles = theme => ({
   card: {
+    
     maxWidth:600,
     margin: 'auto',
     marginBottom: theme.spacing.unit*3,
-    backgroundColor: 'rgba(0, 0, 0, 0.06)'
+    backgroundColor: 'gray'
   },
   cardContent: {
-    backgroundColor: 'white',
+    backgroundColor: 'lightgray',
     padding: `${theme.spacing.unit*2}px 0px`
   },
   cardHeader: {
@@ -43,7 +45,8 @@ const styles = theme => ({
   },
   button: {
    margin: theme.spacing.unit,
-  }
+  },
+  dark,
 })
 
 class Post extends Component {
