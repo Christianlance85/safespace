@@ -16,8 +16,8 @@ const list = () => {
   return fetch('/api/users/', {
     method: 'GET',
   }).then(response => {
-    return response.json(db.getCollection("Post").find({"created":{$gt:new Date(Date.now() - 24*60*60)}})
-    )
+    return response.json()
+    
   }).catch((err) => console.log(err))
 }
 

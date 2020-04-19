@@ -71,7 +71,7 @@ const listNewsFeed = (req, res) => {
         error: errorHandler.getErrorMessage(err)
       })
     }
-    res.json(posts)
+    res.json(db.getCollection("Post").find({"created":{$gt:new Date(Date.now() - 24*60*60)}}))
   })
 }
 
