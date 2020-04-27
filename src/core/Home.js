@@ -76,7 +76,7 @@ class Home extends Component {
               <Newsfeed/>
             </Grid>
             <Grid item xs={6} sm={5}>
-              <FindPeople/>
+              
             </Grid>
           </Grid>
         }

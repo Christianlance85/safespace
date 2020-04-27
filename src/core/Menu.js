@@ -25,6 +25,11 @@ const Menu = withRouter(({history}) => (
           <HomeIcon/>
         </IconButton>
       </Link>
+      <Link to="/find">
+        <IconButton aria-label="Find" style={isActive(history, "/find")}>Find
+          <HomeIcon/>
+        </IconButton>
+      </Link>
 
       {
         !auth.isAuthenticated() && (<span>
