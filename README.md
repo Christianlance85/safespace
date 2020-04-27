@@ -19,6 +19,9 @@ SafeSpace is a simple social media application with posts only lasting 24 hours.
    - To run the application in production, use ``` npm start ```
 4. Open [localhost:3000](http://localhost:3000/) in the browser
 
+# Link to deployed app
+https://safespace24.herokuapp.com/
+
 
 
 
