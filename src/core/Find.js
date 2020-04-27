@@ -24,7 +24,7 @@ const styles = theme => ({
 })
 class Find extends Component {
     state = {
-      defaultPage: true
+      defaultPage: false
     }
     init = () => {
       if(auth.isAuthenticated()){
@@ -43,7 +43,10 @@ class Find extends Component {
         const {classes} = this.props
     return (
       <div className={classes.root}>
-<FindPeople/>
+                     <Grid item xs={6} sm={5}>
+                     <FindPeople/>
+              </Grid>
+
       </div>
     )
     }
